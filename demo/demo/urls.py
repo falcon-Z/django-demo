@@ -21,4 +21,6 @@ urlpatterns = [
     path('', include('core.urls'), name='core'),
     path('password/', include('password.urls'), name='password'),
     path('todo/', include('todo.urls'), name='todo'),
+    path('portfolio/', include('portfolio.urls'), name='portfolio'),
+    path('blog/', include('blog.urls'), name='blog'),
 ]

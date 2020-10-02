@@ -1,9 +1,62 @@
 {% extends 'core/layout.html' %}
 
+{% load static %}
+
 {% block title %} Home {% endblock %}
 
-{% block body %} 
+{% block body %}
 
+<div class="jumbotron text-center">
+    <h1 class="display-4">LEARN@HERE</h1>
+    <p class="lead">Demo Projects</p>
+</div>
 
+<div class="container" style="padding-left: 120px; padding-right: 120px;">
+    <h1 class="display-6 text-center">Full Stack Python Projects</h1>
+
+    <div class="row text-center" style="padding-top: 50px;">
+        <div class="col-lg-4 col-md-6">
+            <div class="card">
+                <a href="{% url 'generator' %}">
+                    <img src="{% static 'core/password.png' %}" alt="Password Generator icon"
+                        class=" rounded img-thumbnail card-img" style="max-width: 150px;">
+                </a>
+                <div class="card-body">
+                    <h3 class="cart-title">Password Generator</h3>
+                    <p class="card-text">A Password generator that generates strong random passwords</p>
+                    <a href="{% url 'generator' %}" class="btn btn-dark">Open</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card">
+                <a href="{% url 'portfolio-home' %}">
+                    <img src="{% static 'core/portfolio.webp' %}" alt="Password Generator icon"
+                        class=" rounded img-thumbnail card-img" style="max-width: 150px;">
+                </a>
+                <div class="card-body">
+                    <h3 class="cart-title">Portfolio</h3>
+                    <p class="card-text">A Sample portfolio about Learn@Here</p>
+                    <a href="{% url 'portfolio-home' %}" class="btn btn-dark">Open</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'core/todo.png' %}" alt="Password Generator icon"
+                        class=" rounded img-thumbnail card-img" style="max-width: 150px;">
+                </a>
+                <div class="card-body">
+                    <h3 class="cart-title">Todo List</h3>
+                    <p class="card-text">A ToDo app with user authentication and database</p>
+                    <a href="{% url 'home' %}" class="btn btn-dark">Open</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
 
 {% endblock %}
