@@ -14,6 +14,13 @@ body {
     font-size: 6rem;
 }
 
+.img-container {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 @media (min-width: 992px) {
     #hometext {
         font-size: 4rem;
